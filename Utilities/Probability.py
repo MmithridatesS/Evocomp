@@ -25,7 +25,7 @@ class Probability:
     def get_samplespace(self):
         return self._samplespace
 
-    def pick(self, with_probability = False):
+    def sample(self, with_probability = False):
         idx, r = [0], random.uniform(0,1)
         for i in range(len(self._samplespace)):
             if self._accprobability[i]>r: 
